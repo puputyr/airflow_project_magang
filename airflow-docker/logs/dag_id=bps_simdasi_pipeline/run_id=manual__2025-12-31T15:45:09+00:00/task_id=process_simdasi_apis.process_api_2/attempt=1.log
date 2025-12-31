@@ -1,0 +1,37 @@
+{"timestamp":"2025-12-31T15:45:20.139282Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T15:45:20.139732Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T15:45:20.573300Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:20.576523Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:20.576840Z","level":"info","event":"Current task name:process_simdasi_apis.process_api_2","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:20.576989Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:20.577132Z","level":"info","event":"🔁 Processing URL: https://webapi.bps.go.id/v1/api/interoperabilitas/datasource/simdasi/id/25/tahun/2024/id_tabel/a05CZmFhT0JWY0lBd2g0cW80S0xiZz09/wilayah/3500000/th/1,2/key/79452e4c302f8921ad36cd2bf55f0630","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:20.577337Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:20.577564Z","level":"info","event":"🔄 Mencoba mengambil daftar tahun yang tersedia secara otomatis...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:22.067512Z","level":"info","event":"✅ Tahun yang tersedia ditemukan: [2017, 2019, 2023, 2024]","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:22.068241Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:22.068350Z","level":"info","event":"--- Memulai Loop Pengambilan Data SIMDASI ---","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:22.068434Z","level":"info","event":"🔄 Mengambil tahun 2024...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:22.730381Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2024.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:22.730783Z","level":"info","event":"🔄 Mengambil tahun 2023...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:23.402903Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2023.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:23.403264Z","level":"info","event":"🔄 Mengambil tahun 2019...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.071502Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2019.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.071677Z","level":"info","event":"🔄 Mengambil tahun 2017...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.719724Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2017.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.735954Z","level":"info","event":"✅Yeay Data berhasil ditranspose menjadi format long (jumlah baris: 2496).","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.737694Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'kasus_penyakit'","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.738990Z","level":"info","event":"❌YAH GABISA Terjadi kesalahan saat operasi database: connection to server at \"localhost\" (::1), port 5431 failed: Connection refused","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.739171Z","level":"info","event":"\tIs the server running on that host and accepting TCP/IP connections?","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.739320Z","level":"info","event":"connection to server at \"localhost\" (127.0.0.1), port 5431 failed: Connection refused","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.739459Z","level":"info","event":"\tIs the server running on that host and accepting TCP/IP connections?","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.739603Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.739735Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'kasus_penyakit_cl'","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.740016Z","level":"info","event":"❌YAH GABISA Terjadi kesalahan saat operasi database: connection to server at \"localhost\" (::1), port 5431 failed: Connection refused","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.740148Z","level":"info","event":"\tIs the server running on that host and accepting TCP/IP connections?","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.740290Z","level":"info","event":"connection to server at \"localhost\" (127.0.0.1), port 5431 failed: Connection refused","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.740409Z","level":"info","event":"\tIs the server running on that host and accepting TCP/IP connections?","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.740527Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.740334Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-12-31T15:45:24.760644Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.763637Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:45:24.764304Z","level":"info","event":"Task operator:<Task(PythonOperator): process_simdasi_apis.process_api_2>","logger":"task.stdout"}

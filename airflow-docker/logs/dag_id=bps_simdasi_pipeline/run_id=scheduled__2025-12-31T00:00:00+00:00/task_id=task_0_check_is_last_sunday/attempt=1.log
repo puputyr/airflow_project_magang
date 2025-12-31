@@ -1,0 +1,9 @@
+{"timestamp":"2025-12-31T14:47:15.977226Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T14:47:15.977745Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T14:47:16.996091Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T14:47:16.996874Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-31T14:47:16.996951Z","level":"info","event":"Current task name:task_0_check_is_last_sunday","logger":"task.stdout"}
+{"timestamp":"2025-12-31T14:47:16.996996Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-31T14:47:16.997058Z","level":"info","event":"Memeriksa tanggal eksekusi schedule: 2025-12-31","logger":"task.stdout"}
+{"timestamp":"2025-12-31T14:47:16.997098Z","level":"info","event":"SKIP. Tanggal schedule 2025-12-31 bukan hari Minggu terakhir bulan ini.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T14:47:16.996753Z","level":"info","event":"Skipping task.","reason":"Bukan hari Minggu terakhir, pipeline di-skip.","logger":"task","filename":"task_runner.py","lineno":953}

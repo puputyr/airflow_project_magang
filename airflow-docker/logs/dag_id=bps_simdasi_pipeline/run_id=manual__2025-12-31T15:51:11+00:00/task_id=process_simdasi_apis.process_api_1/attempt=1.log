@@ -1,0 +1,41 @@
+{"timestamp":"2025-12-31T15:51:18.995836Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T15:51:18.996303Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T15:51:19.491809Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:19.492381Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:19.492686Z","level":"info","event":"Current task name:process_simdasi_apis.process_api_1","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:19.493475Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:19.494031Z","level":"info","event":"🔁 Processing URL: https://webapi.bps.go.id/v1/api/interoperabilitas/datasource/simdasi/id/25/tahun/2024/id_tabel/Mzh6ZDZ3VXg3bzRtUUVtRkZOZUpZdz09/wilayah/3500000/th/1,2/key/79452e4c302f8921ad36cd2bf55f0630","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:19.496668Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:19.496806Z","level":"info","event":"🔄 Mencoba mengambil daftar tahun yang tersedia secara otomatis...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:21.527737Z","level":"info","event":"✅ Tahun yang tersedia ditemukan: [2011, 2014, 2018, 2019, 2020, 2021, 2024]","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:21.529876Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:21.530023Z","level":"info","event":"--- Memulai Loop Pengambilan Data SIMDASI ---","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:21.530158Z","level":"info","event":"🔄 Mengambil tahun 2024...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:22.350909Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2024.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:22.351314Z","level":"info","event":"🔄 Mengambil tahun 2021...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:23.079375Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2021.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:23.079580Z","level":"info","event":"🔄 Mengambil tahun 2020...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:23.764482Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2020.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:23.764919Z","level":"info","event":"🔄 Mengambil tahun 2019...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:24.459999Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2019.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:24.460542Z","level":"info","event":"🔄 Mengambil tahun 2018...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:25.480858Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2018.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:25.481523Z","level":"info","event":"🔄 Mengambil tahun 2014...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.172348Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2014.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.173119Z","level":"info","event":"🔄 Mengambil tahun 2011...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.845096Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2011.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.852388Z","level":"info","event":"✅Yeay Data berhasil ditranspose menjadi format long (jumlah baris: 1638).","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.853724Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'desa_yg_memiliki_sarana_kesehatan'","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.866393Z","level":"info","event":"Memastikan skema 'kesehatan' ada...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.867729Z","level":"info","event":"✅ Skema 'kesehatan' siap.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.868651Z","level":"info","event":"Menulis data ke tabel 'kesehatan.desa_yg_memiliki_sarana_kesehatan'...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.912411Z","level":"info","event":"✅YEY BISA Data berhasil disimpan ke PostgreSQL: kesehatan.desa_yg_memiliki_sarana_kesehatan","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.912690Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'desa_yg_memiliki_sarana_kesehatan_cl'","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.918333Z","level":"info","event":"Memastikan skema 'kesehatan' ada...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.919472Z","level":"info","event":"✅ Skema 'kesehatan' siap.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.919553Z","level":"info","event":"Menulis data ke tabel 'kesehatan.desa_yg_memiliki_sarana_kesehatan_cl'...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.957453Z","level":"info","event":"✅CONGRATS Data berhasil disimpan ke PostgreSQL: kesehatan.desa_yg_memiliki_sarana_kesehatan_cl","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.957016Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-12-31T15:51:26.969546Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.969994Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:26.970308Z","level":"info","event":"Task operator:<Task(PythonOperator): process_simdasi_apis.process_api_1>","logger":"task.stdout"}

@@ -188,6 +188,8 @@ services:
         condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
+    extra_hosts:
+      host.docker.internal: "host-gateway"   # <-- Ini Mapping (titik dua)
 
   airflow-triggerer:
     <<: *airflow-common

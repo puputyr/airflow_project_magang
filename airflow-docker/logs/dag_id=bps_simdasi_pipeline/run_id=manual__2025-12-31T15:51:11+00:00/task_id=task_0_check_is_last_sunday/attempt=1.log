@@ -1,0 +1,11 @@
+{"timestamp":"2025-12-31T15:51:17.772545Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T15:51:17.773918Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T15:51:18.289896Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.291673Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.291818Z","level":"info","event":"Current task name:task_0_check_is_last_sunday","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.291889Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.292077Z","level":"info","event":"✅ Triggered MANUAL. Melanjutkan pipeline.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.294715Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-12-31T15:51:18.314723Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.315733Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:51:18.316653Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): task_0_check_is_last_sunday>","logger":"task.stdout"}

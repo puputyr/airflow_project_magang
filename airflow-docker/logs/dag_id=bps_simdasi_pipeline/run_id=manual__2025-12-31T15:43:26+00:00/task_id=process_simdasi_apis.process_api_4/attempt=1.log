@@ -1,0 +1,33 @@
+{"timestamp":"2025-12-31T15:43:54.348769Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T15:43:54.350676Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bps_simdasi_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T15:43:54.870023Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:54.870338Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:54.870523Z","level":"info","event":"Current task name:process_simdasi_apis.process_api_4","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:54.870778Z","level":"info","event":"Dag name:bps_simdasi_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:54.872562Z","level":"info","event":"🔁 Processing URL: https://webapi.bps.go.id/v1/api/interoperabilitas/datasource/simdasi/id/25/tahun/2024/id_tabel/aWpHRGF4UVBjZTVEODBHMTV4R0xUUT09/wilayah/3500000/key/79452e4c302f8921ad36cd2bf55f0630/","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:54.872726Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:54.872843Z","level":"info","event":"🔄 Mencoba mengambil daftar tahun yang tersedia secara otomatis...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:56.392837Z","level":"info","event":"✅ Tahun yang tersedia ditemukan: [2018, 2019, 2023, 2024]","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:56.395303Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:56.395661Z","level":"info","event":"--- Memulai Loop Pengambilan Data SIMDASI ---","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:56.395857Z","level":"info","event":"🔄 Mengambil tahun 2024...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:57.071885Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2024.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:57.072273Z","level":"info","event":"🔄 Mengambil tahun 2023...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:57.734694Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2023.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:57.735465Z","level":"info","event":"🔄 Mengambil tahun 2019...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:58.388809Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2019.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:58.389116Z","level":"info","event":"🔄 Mengambil tahun 2018...","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.023508Z","level":"info","event":"-> Berhasil memproses data untuk tahun 2018.","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.042313Z","level":"info","event":"✅Yeay Data berhasil ditranspose menjadi format long (jumlah baris: 2028).","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.043289Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'tenaga_kesehatan'","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.046355Z","level":"info","event":"❌YAH GABISA Terjadi kesalahan saat operasi database: connection to server at \"127.0.0.1\", port 5431 failed: Connection refused","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.050173Z","level":"info","event":"\tIs the server running on that host and accepting TCP/IP connections?","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.050483Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.050885Z","level":"info","event":"Skema: 'kesehatan', Tabel: 'tenaga_kesehatan_cl'","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.051053Z","level":"info","event":"❌YAH GABISA Terjadi kesalahan saat operasi database: connection to server at \"127.0.0.1\", port 5431 failed: Connection refused","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.051268Z","level":"info","event":"\tIs the server running on that host and accepting TCP/IP connections?","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.051585Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.045650Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-12-31T15:43:59.091229Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.091893Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-31T15:43:59.092148Z","level":"info","event":"Task operator:<Task(PythonOperator): process_simdasi_apis.process_api_4>","logger":"task.stdout"}

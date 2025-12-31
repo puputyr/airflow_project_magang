@@ -1,10 +1,10 @@
 import psycopg2
 DB_CONFIG = {
-    "dbname": "result_cleansing",
+    "dbname": "postgres",
     "user": "postgres",
-    "password": "2lNyRKW3oc9kan8n",
-    "host": "103.183.92.158",
-    "port": "5432"
+    "password": "290922",
+    "host": "host.docker.internal",
+    "port": "5431"
 }
 
 def get_db_connection():
